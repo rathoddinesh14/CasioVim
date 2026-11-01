@@ -3,7 +3,7 @@ local themes = {
     plugin = "iruzo/matrix-nvim",
     lualine = "matrix",
     options = {
-      matrix_contrast = true,
+      matrix_contrast = false,
       matrix_italic = false,
     },
   },
