@@ -1,0 +1,2 @@
+# CasioVim
+NeoVim, LazyVim setup
