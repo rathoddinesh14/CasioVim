@@ -16,7 +16,7 @@ local themes = {
   },
 }
 
-local selected = "matrix"
+local selected = "tokyonight-moon"
 local theme = assert(themes[selected], "Unknown colorscheme: " .. selected)
 
 for option, value in pairs(theme.options or {}) do
