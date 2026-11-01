@@ -24,6 +24,21 @@ apt install termux-tools lazygit ripgrep
 apt install ruff luarocks lua-language-server clang
 ```
 
+### JetBrainsMono Nerd Font
+
+Termux renders Neovim icons using the terminal font. Install JetBrainsMono Nerd Font in Termux with:
+
+```bash
+pkg install curl unzip
+mkdir -p ~/.termux
+curl -fL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip -o ~/JetBrainsMono.zip
+unzip -o ~/JetBrainsMono.zip JetBrainsMonoNerdFont-Regular.ttf -d ~/.termux
+mv ~/.termux/JetBrainsMonoNerdFont-Regular.ttf ~/.termux/font.ttf
+termux-reload-settings
+```
+
+Restart the Termux session after reloading the font.
+
 ### Termux clipboards
 
 For get clipboards from vim to the device.
