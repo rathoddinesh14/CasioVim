@@ -1,7 +1,7 @@
 return {
   {
     "zbirenbaum/copilot.lua",
-    event = { "BufReadPost", "BufNewFile" },
+    lazy = false,
     opts = {
       server = {
         type = "nodejs",
