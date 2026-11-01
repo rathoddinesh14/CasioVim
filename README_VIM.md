@@ -19,7 +19,7 @@ Run the following command to install the necessary packages in Termux
 
 ```bash
 apt update && apt upgrade
-apt install termux-api python neovim git nodejs-lts curl ca-certificates
+apt install termux-api python neovim git nodejs-lts
 apt install termux-tools lazygit ripgrep
 apt install ruff luarocks lua-language-server clang
 ```
