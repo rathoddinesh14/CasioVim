@@ -1,21 +1,22 @@
--- * https://github.com/nvimdev/dashboard-nvim/wiki/Ascii-Header-Text
-local dashboard_custom_header17 = {
-  "",
-  "⣿⣿⣿⣿⣯⣿⣿⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠈⣿⣿⣿⣿⣿⣿⣆⠄",
-  "⢻⣿⣿⣿⣾⣿⢿⣢⣞⣿⣿⣿⣿⣷⣶⣿⣯⣟⣿⢿⡇⢃⢻⣿⣿⣿⣿⣿⢿⡄",
-  "⠄⢿⣿⣯⣏⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣧⣾⢿⣮⣿⣿⣿⣿⣾⣷",
-  "⠄⣈⣽⢾⣿⣿⣿⣟⣄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣯⢿⣿⣿⣿⣿",
-  "⣿⠟⣫⢸⣿⢿⣿⣾⣿⢿⣿⣿⢻⣿⣿⣿⢿⣿⣿⣿⢸⣿⣼⣿⣿⣿⣿⣿⣿⣿",
-  "⡟⢸⣟⢸⣿⠸⣷⣝⢻⠘⣿⣿⢸⢿⣿⣿⠄⣿⣿⣿⡆⢿⣿⣼⣿⣿⣿⣿⢹⣿",
-  "⡇⣿⡿⣿⣿⢟⠛⠛⠿⡢⢻⣿⣾⣞⣿⡏⠖⢸⣿⢣⣷⡸⣇⣿⣿⣿⢼⡿⣿⣿",
-  "⣡⢿⡷⣿⣿⣾⣿⣷⣶⣮⣄⣿⣏⣸⣻⣃⠭⠄⠛⠙⠛⠳⠋⣿⣿⣇⠙⣿⢸⣿",
-  "⠫⣿⣧⣿⣿⣿⣿⣿⣿⣿⣿⣿⠻⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣹⢷⣿⡼⠋",
-  " ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿  ",
-  "  ⢻⢹⣿⠸⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣼⣿⣿⣿⣿⡟  ",
-  "  ⠈⢸⣿ ⠙⢿⣿⣿⣹⣿⣿⣿⣿⣟⡃⣽⣿⣿⡟⠁⣿⣿⢻⣿⣿⢿  ",
-  "   ⠘⣿⡄  ⠙⢿⣿⣿⣾⣿⣷⣿⣿⣿⠟⠁  ⣿⣿⣾⣿⡟⣿  ",
-  "    ⢻⡇⠸⣆  ⠈⠻⣿⡿⠿⠛⠉    ⢸⣿⣇⣿⣿⢿⣿  ",
-  "",
+local function medical_line(text)
+  return string.format("| %-33s|", text)
+end
+
+local medical_header = {
+  "+----------------------------------+",
+  medical_line("MEDICAL // MINDSET"),
+  medical_line("     **       **"),
+  medical_line("   ******   ******"),
+  medical_line("  ******** ********"),
+  medical_line("   ***************"),
+  medical_line("     ***********"),
+  medical_line("       *******"),
+  medical_line("         ***"),
+  medical_line("          *"),
+  medical_line("___/\\_/\\____/\\_/\\___"),
+  medical_line("HEALTH IS A DAILY PRACTICE"),
+  medical_line("ONE STEP AT A TIME"),
+  "+----------------------------------+",
 }
 -- Snacks
 return {
@@ -51,7 +52,7 @@ return {
       rows = nil,
       preset = {
         keys = keys,
-        header = table.concat(dashboard_custom_header17, "\n"),
+        header = table.concat(medical_header, "\n"),
       },
       formats = {
         key = function(item)

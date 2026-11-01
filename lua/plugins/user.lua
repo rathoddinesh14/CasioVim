@@ -1,6 +1,8 @@
+local theme = require("config.theme")
+
 return {
   "LazyVim/LazyVim",
   opts = {
-    colorscheme = "tokyonight-moon",
+    colorscheme = theme.name,
   },
 }
