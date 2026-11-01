@@ -34,27 +34,6 @@ require("lazy").setup({
   ui = {
     border = "rounded",
     backdrop = 75,
-    icons = {
-      cmd = "\u{f120} ",
-      config = "\u{f013}",
-      debug = "● ",
-      event = "\u{f0e7} ",
-      favorite = "\u{f005} ",
-      ft = "\u{f15b} ",
-      init = "\u{f013} ",
-      import = "\u{f019} ",
-      keys = "\u{f11c} ",
-      lazy = "\u{f013} ",
-      loaded = "●",
-      not_loaded = "○",
-      plugin = "\u{f02d} ",
-      runtime = "\u{f121} ",
-      require = "\u{f489} ",
-      source = "\u{f1d8} ",
-      start = "\u{f04b} ",
-      task = "✓ ",
-      list = { "●", "➜", "★", "‒" },
-    },
   },
   checker = {
     enabled = true, -- check for plugin updates periodically
